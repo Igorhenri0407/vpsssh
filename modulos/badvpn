@@ -73,7 +73,7 @@ fun_badvpn() {
                     sleep 0.1
                 } || {
                     cd $HOME
-                    wget https://raw.githubusercontent.com/nandoslayer/vpsssh/main/instalador/badvpn-udpgw -o /dev/null
+                    wget https://raw.githubusercontent.com/Igorhenri0407/vpsssh/main/instalador/badvpn-udpgw -o /dev/null
                     mv -f $HOME/badvpn-udpgw /bin/badvpn-udpgw
                     chmod 777 /bin/badvpn-udpgw
                 }

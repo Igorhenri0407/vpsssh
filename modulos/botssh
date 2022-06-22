@@ -3,7 +3,7 @@
 #	SCRIPT: BOTSSH SSH
 #====================================================
 clear
-[[ $(awk -F" " '{print $2}' /usr/lib/licence) != "@nandoslayer" ]] && exit 0
+[[ $(awk -F" " '{print $2}' /usr/lib/licence) != "@Igorhenri0407" ]] && exit 0
 fun_bar() {
     comando[0]="$1"
     comando[1]="$2"
@@ -44,7 +44,7 @@ fun_botOnOff() {
         echo -e "\033[1;32mINICIANDO BOT AUTOSSH \033[0m\n"
         fun_bot1() {
             [[ ! -e "/etc/SSHPlus/ShellBot.sh" ]] && {
-				wget -qO- https://raw.githubusercontent.com/nandoslayer/vpsssh/main/instalador/ShellBot.sh >/etc/SSHPlus/ShellBot.sh
+				wget -qO- https://raw.githubusercontent.com/Igorhenri0407/vpsssh/main/instalador/ShellBot.sh >/etc/SSHPlus/ShellBot.sh
 			}
             cd /etc/SSHPlus
             screen -dmS bot_plus ./bot $tokenbot $iduser >/dev/null 2>&1
